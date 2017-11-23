@@ -73,6 +73,7 @@
   },
   "now": {
     "alias": ["react-weather-api-beta", "react-weather-api"],
+    "dotenv": true,
     "env": {
       "NODE_ENV": "production"
     },
