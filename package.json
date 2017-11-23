@@ -76,7 +76,7 @@
     "env": {
       "NODE_ENV": "production"
     },
-    "files": ["./api", "index.js", "package.json", "yarn.lock"],
+    "files": ["./api", ".env.example", "index.js", "package.json", "yarn.lock"],
     "name": "react-weather-api"
   }
 }
