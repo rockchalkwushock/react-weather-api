@@ -38,27 +38,6 @@ jobs:
           prefix: coverage
       - store_test_results:
           path: ./coverage/clover.xml
-  build:
-    docker:
-      - image: 'circleci/node:latest'
-    working_directory: ~/react-weather-api
-    steps:
-      - attach_workspace:
-          at: ~/react-weather-api
-      - run: yarn install
-      - run: sudo yarn global add now
-      - deploy:
-          name: Deploy & Alias.
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "development" ]; then
-              now -t ${NOW_TOKEN} -n=react-weather-api
-              now -t ${NOW_TOKEN} alias react-weather-api-beta.now.sh
-            elif [ "${CIRCLE_BRANCH}" == "master" ]; then
-              now -t ${NOW_TOKEN} -n=react-weather-api
-              now -t ${NOW_TOKEN} alias react-weather-api.now.sh
-            else
-              echo "Should not get here ever."
-            fi
 workflows:
   version: 2
   test_and_deploy:
@@ -67,11 +46,3 @@ workflows:
       - test_and_report:
           requires:
             - checkout_code
-      - build:
-          requires:
-            - test_and_report
-          filters:
-            branches:
-              only:
-                - master
-                - development
