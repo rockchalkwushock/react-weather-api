@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "description": "GraphQL API for React-Weather Application",
-  "author":
-    "Cody Brunner <rockchalkwushock@icloud.com> (https://rcws-development.com)",
+  "author": "Cody Brunner <rockchalkwushock@icloud.com> (https://rcws-development.com)",
   "repository": "https://github.com/rockchalkwushock/react-weather-api.git",
   "homepage": "https://github.com/rockchalkwushock/react-weather-api#readme",
   "bugs": "https://github.com/rockchalkwushock/react-weather-api/issues",
@@ -24,6 +23,7 @@
     "cors": "^2.8.4",
     "dotenv-safe": "^4.0.4",
     "express": "^4.16.2",
+    "express-rate-limit": "^2.9.0",
     "graphql": "^0.11.7",
     "graphql-tools": "^2.8.0",
     "helmet": "^3.9.0",
@@ -57,7 +57,10 @@
   },
   "jest": {
     "bail": true,
-    "collectCoverageFrom": ["api/resolvers/*.js"],
+    "collectCoverageFrom": [
+      "!api/index.js",
+      "api/**/*.js"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 50,
@@ -69,10 +72,13 @@
     "testEnvironment": "node"
   },
   "lint-staged": {
-    "*.js": ["yarn prettier", "git add"]
+    "*.js": [
+      "yarn prettier",
+      "git add"
+    ]
   },
   "now": {
-    "alias": ["react-weather-api-beta", "react-weather-api"],
+    "alias": "react-weather-api",
     "dotenv": true,
     "env": {
       "NODE_ENV": "production"

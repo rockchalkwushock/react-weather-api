@@ -11,14 +11,9 @@ const app = express()
 // Apply middlewares
 middlewares(app)
 
-// Test route for Express Server
-// app.get('/', (req, res) => {
-//   res.send('hello world')
-// })
-
 // Create '/graphql' endpoint.
 app.use(
-  '/graphql',
+  env.GRAPHQL_ENDPOINT,
   graphqlExpress({
     schema,
     debug: isEnv.dev
@@ -27,5 +22,9 @@ app.use(
 
 app.listen(env.PORT, err => {
   if (err) console.error('Error', err)
-  console.log('App listening on port 3000!')
+  console.log(`
+  GraphQL API Server running on:
+    PORT: ${env.PORT}
+    MODE: ${process.env.NODE_ENV}
+  `)
 })
