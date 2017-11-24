@@ -1,8 +1,70 @@
 module.exports = `
-  type Mutation {
-    postTest(name: String!): String!
+  type Coords {
+    lat: Float,
+    long: Float
+  }
+  type Current {
+    base: CurrentBase
+    metric: CurrentUnits
+    standard: CurrentUnits
+  }
+  type CurrentBase {
+    cloud: Int
+    code: Int
+    condition: String
+    humidity: Int
+    icon: String
+    isDay: Int
+    lastUpdated: String
+    windCard: String
+    windDeg: Int
+  }
+  type CurrentUnits {
+    feelsLike: Float
+    precip: Float
+    pres: Float
+    temp: Float
+    vis: Float
+    wind: Float
+  }
+  type Forecast {
+    base: ForecastBase
+    metric: ForecastUnits
+    standard: ForecastUnits
+  }
+  type ForecastBase {
+    code: Int
+    condition: String
+    date: String
+    humidity: Int
+    icon: String
+    moonrise: String
+    moonset: String
+    sunrise: String
+    sunset: String
+    uvIndex: Float
+  }
+  type ForecastUnits {
+    avgTemp: Float
+    maxTemp: Float
+    maxWind: Float
+    minTemp: Float
+    precip: Float
+    vis: Float
+  }
+  type LocationInfo {
+    city: String
+    coordinates: Coords
+    country: String
+    currentTime: String
+    region: String
   }
   type Query {
-    getTest: String!
+    getWeather(location: String!): Weather!
+  }
+  type Weather {
+    current: Current!
+    location: LocationInfo!
+    forecast: [Forecast]!
   }
 `

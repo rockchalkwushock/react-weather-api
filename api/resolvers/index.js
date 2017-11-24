@@ -1,8 +1,14 @@
+const weatherApi = require('../services')
+
 module.exports = {
-  Mutation: {
-    postTest: (parent, { name }) => `Hello ${name}`
-  },
   Query: {
-    getTest: () => 'Hello World!'
+    getWeather: async (parent, { location }) => {
+      try {
+        const data = await weatherApi(location)
+        return data
+      } catch (e) {
+        throw e
+      }
+    }
   }
 }
