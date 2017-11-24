@@ -5,6 +5,9 @@
 
 [![Now](https://img.shields.io/badge/deployed%20with-now--cli-orange.svg?style=flat-square)](https://github.com/zeit/now-cli)
 
+[![NSP Status](https://nodesecurity.io/orgs/rcws-development/projects/a3ee0aab-1908-4408-9e5d-3ddeed95c937/badge)](https://nodesecurity.io/orgs/rcws-development/projects/a3ee0aab-1908-4408-9e5d-3ddeed95c937)
+[![Known Vulnerabilities](https://snyk.io/test/github/rockchalkwushock/react-weather-api/badge.svg)](https://snyk.io/test/github/rockchalkwushock/react-weather-api)
+
 [![Commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/rockchalkwushock/react-weather-api/pulls)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
