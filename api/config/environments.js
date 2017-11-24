@@ -12,7 +12,7 @@ const prodConfig = {
   API_KEY: process.env.PROD_API_KEY,
   CORS: {
     origin: process.env.CLIENT_ENDPOINTS,
-    methods: 'POST'
+    methods: 'GET'
   },
   GRAPHQL_ENDPOINT: process.env.ENDPOINT,
   LIMITER: {
@@ -26,7 +26,7 @@ const defaultConfig = {
   BASE_URL: 'https://api.apixu.com/v1',
   CORS: {
     origin: '*',
-    methods: 'POST'
+    methods: 'GET'
   },
   GRAPHQL_ENDPOINT: '/graphql',
   LIMITER: {

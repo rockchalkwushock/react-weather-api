@@ -64,7 +64,7 @@ module.exports = `
   }
   type Weather {
     current: Current!
-    location: LocationInfo!
     forecast: [Forecast]!
+    location: LocationInfo!
   }
 `
