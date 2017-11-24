@@ -1,7 +1,5 @@
 # react-weather-api :sunny: :cyclone: :umbrella: :snowflake:
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/rockchalkwushock/react-weather-api.svg)](https://greenkeeper.io/)
-
 [![CircleCI](https://img.shields.io/circleci/project/github/rockchalkwushock/react-weather-api.svg?style=flat-square)](https://circleci.com/gh/rockchalkwushock/react-weather-api)
 [![Codecov](https://img.shields.io/codecov/c/github/rockchalkwushock/react-weather-api.svg?style=flat-square)](https://codecov.io/gh/rockchalkwushock/react-weather-api)
 
@@ -9,6 +7,7 @@
 
 [![NSP Status](https://nodesecurity.io/orgs/rcws-development/projects/a3ee0aab-1908-4408-9e5d-3ddeed95c937/badge)](https://nodesecurity.io/orgs/rcws-development/projects/a3ee0aab-1908-4408-9e5d-3ddeed95c937)
 [![Known Vulnerabilities](https://snyk.io/test/github/rockchalkwushock/react-weather-api/badge.svg)](https://snyk.io/test/github/rockchalkwushock/react-weather-api)
+[![Greenkeeper badge](https://badges.greenkeeper.io/rockchalkwushock/react-weather-api.svg)](https://greenkeeper.io/)
 
 [![Commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/rockchalkwushock/react-weather-api/pulls)
