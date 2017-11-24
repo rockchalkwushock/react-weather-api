@@ -1,5 +1,7 @@
 # react-weather-api :sunny: :cyclone: :umbrella: :snowflake:
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rockchalkwushock/react-weather-api.svg)](https://greenkeeper.io/)
+
 [![CircleCI](https://img.shields.io/circleci/project/github/rockchalkwushock/react-weather-api.svg?style=flat-square)](https://circleci.com/gh/rockchalkwushock/react-weather-api)
 [![Codecov](https://img.shields.io/codecov/c/github/rockchalkwushock/react-weather-api.svg?style=flat-square)](https://codecov.io/gh/rockchalkwushock/react-weather-api)
 
