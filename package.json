@@ -39,7 +39,7 @@
     "eslint-config-equimper": "^2.2.1",
     "eslint-config-prettier": "^2.7.0",
     "husky": "^0.15.0-beta.13",
-    "jest": "^21.2.1",
+    "jest": "^22.1.2",
     "lint-staged": "^5.0.0",
     "nodemon": "^1.12.1",
     "nps": "^5.7.1",
