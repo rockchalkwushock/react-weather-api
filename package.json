@@ -17,7 +17,7 @@
     "test": "nps test"
   },
   "dependencies": {
-    "apollo-server-express": "^1.2.0",
+    "apollo-server-express": "^2.14.2",
     "body-parser": "^1.18.2",
     "compression": "^1.7.1",
     "cors": "^2.8.4",
